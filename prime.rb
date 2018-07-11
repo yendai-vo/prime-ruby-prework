@@ -1,5 +1,5 @@
 # Add  code here!
-def prime(number)
+def prime?(number)
   if number < 1
     false
   elsif Math.sqrt(number) == 0
