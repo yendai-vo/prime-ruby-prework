@@ -4,6 +4,8 @@ def prime?(number)
     false
   elsif Math.sqrt(number) == 0
     false
+  elsif number % number == 0
+    false
   else
     true
   end
