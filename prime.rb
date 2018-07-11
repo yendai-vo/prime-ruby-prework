@@ -1,12 +1,5 @@
 # Add  code here!
 def prime?(number)
-  if number < 2
-    false
-  elsif Math.sqrt(number) == 0
-    false
-  elsif number % (number-1) == 0
-    false
-  else
-    true
-  end
+  return false if num < 2
+  Math.sqrt(num).to_i.downto(2).each {|i| return false if num % i == 0}
 end
